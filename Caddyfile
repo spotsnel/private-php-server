@@ -1,0 +1,6 @@
+:80 {
+	bind tailscale/privatephp
+	root * /site
+	php_fastcgi localhost:9000
+	file_server
+}
